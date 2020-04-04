@@ -19,7 +19,7 @@ p {
 }
 body {
     margin: 0 auto;
-    width: 100%;
+    min-width: 320px;
 }
 h1 {
     margin: 0;
@@ -57,6 +57,7 @@ article {
 .logo-link {
     z-index: 1;
     color: #ffffff;
+    
 }
 .title {
     z-index: 1;
@@ -71,12 +72,14 @@ article {
 .header__title {
     color: #ffffff;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .search_item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 1;
+    
 }
 .search_apple_item {
     background-color: #5e42b0;
@@ -117,7 +120,7 @@ article {
     position: relative;
     
 }
-.title_connection_item::before {
+.title_connection_item::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -414,11 +417,12 @@ article {
 @media (min-width: 961px) {
     .header {   
         background-image: url("../images/football_1920.jpg");
+        padding-top: 40px;
+        padding-bottom: 110px;
     }
     .logo-link {
         width: 195px;
         height: 55px;
-        margin-top: 45px;
     }
     .title {
         width: 80%;
@@ -433,10 +437,6 @@ article {
         align-self: flex-end;
         font-size: 90px;
     }
-    .search_item {
-        width: 675px;
-        padding-bottom: 110px;
-    }
     .search_apple_item {
         width: 310px;
         height: 78px;
@@ -444,6 +444,7 @@ article {
     .search_google__item {
         width: 310px;
         height: 78px;
+        margin-left: 50px;
     }
     .search_apple__link {
         width: 42px;
@@ -454,7 +455,7 @@ article {
         height: 50px;
     }
     .span_apple_link {
-        padding-left: 25px;
+        margin-left: 25px;
         font-size: 14px;
     }
     .main {
@@ -564,25 +565,25 @@ article {
         width: 50%;
     }
     .container_content_be_active {
-        width: 72%;
+        padding-top: 260px;
         padding-left: 130px;
+        padding-bottom: 225px;
     }
     .title_be_active {
         font-size: 80px;
-        padding-top: 260px;
-        padding-bottom: 110px;
+        margin-bottom: 110px;
     }
     .text_be_active {
         font-size: 24px;
-        padding-bottom: 225px;
     }
     .img_find_contact {
         width: 100%;
         height: 100%;
     }
     .container_content_find_contact {
-        width: 72%;
         padding-left: 190px;
+        padding-top: 260px;
+        padding-bottom: 225px;
     }
     .container_img_find_contact {
         width: 50%;
@@ -592,8 +593,7 @@ article {
     }
     .title_find_contact {
         font-size: 80px;
-        padding-top: 260px;
-        padding-bottom: 110px;
+        margin-bottom: 110px;
     }
     .container_img_work_it {
         width: 50%;
@@ -606,22 +606,22 @@ article {
         width: 50%;
     }
     .container_content_work_it {
-        width: 50%;
         padding-left: 130px;
+        padding-bottom: 225px;
+        padding-top: 260px;
     }
     .title_work_it {
         font-size: 80px;
         padding-left: 140px;
-        padding-top: 260px;
-        padding-bottom: 110px;
+        margin-bottom: 110px;
     }
     .footer {
         background-image: url(../images/game_1920.jpg);
+        padding-top: 225px;
+        padding-bottom: 50px;
     }
     .container_footer_logo {
-        width: 870px;
         justify-content: space-between;
-        margin-top: 225px;
         margin-bottom: 150px;
     }
     .footer_logo {
@@ -647,7 +647,7 @@ article {
     .logo-link_footer_surf {
         width: 195px;
         height: 55px;
-        margin-bottom: 50px;
+       
     }
     .box_work_it {
         width: 168px;
@@ -674,6 +674,8 @@ article {
         width: 100%;
         max-width: 960px;
         min-width: 641px;
+        padding-bottom: 90px;
+        padding-top: 30px;
     }
     .logo_link { 
         width: 210px;
@@ -682,7 +684,6 @@ article {
     .svg_logo_link {
         width: 210px;
         height: 57px; 
-        margin-top: 40px;
     }
     .title {
         width: 78%;
@@ -699,17 +700,14 @@ article {
         align-self: flex-end;
         max-width: 80%;
     }
-    .search_item {
-        width: 92%; 
-        margin-bottom: 90px;
-    }
     .search_apple_item {
-        width: 48%;
+        width: 310px;
         height: 80px;
     }
     .search_google__item {
-        width: 48%;
+        width: 310px;
         height: 80px;
+        margin-left: 30px;
     }
     .search_apple__link {
         width: 36px;
@@ -720,7 +718,7 @@ article {
         height: 45px;
     }
     .span_apple_link {
-        padding-left: 25px;
+        margin-left: 25px;
         font-size: 14px;
     }
     .header_title_footballer {
@@ -729,6 +727,7 @@ article {
     }
     .main {
        width: 100%;
+       min-width: 641px;
        max-width: 960px;
     }
     .img_footballer {
@@ -831,18 +830,18 @@ article {
     }
     .container_content_be_active {
         padding-left: 0;
-        width: 80%;
+        padding-top: 90px;
+        padding-bottom: 35px;
+
     }
     .title_be_active {
         font-size: 80px;
         padding-left: 30px;
-        padding-top: 90px;
-        padding-bottom: 35px;
+        margin-bottom: 35px;
     }
     .text_be_active {
         font-size: 24px;
         padding-left: 30px;
-        padding-bottom: 35px;
     }
     .section_find_contact {
         flex-direction: column;
@@ -854,8 +853,9 @@ article {
         min-width: 641px;
     }
     .container_content_find_contact {
-        width: 80%;
+        padding-top: 90px;
         padding-left: 0;
+        padding-bottom: 35px;
     }
     .container_img_find_contact {
         width: 100%;
@@ -866,10 +866,9 @@ article {
         max-width: 100%;
     }
     .title_find_contact {
-        font-size: 80px;
         padding-left: 30px;
-        padding-top: 90px;
-        padding-bottom: 35px;
+        font-size: 80px;
+        margin-bottom: 35px;
     }
     .section_work_it {
         flex-direction: column;
@@ -888,14 +887,14 @@ article {
         min-width: 641px;
     }
     .container_content_work_it {
-        width: 80%;
+        padding-top: 90px;
         padding-left: 0;
+        padding-bottom: 35px;
     }
     .title_work_it {
         font-size: 80px;
         padding-left: 30px;
-        padding-top: 90px;
-        padding-bottom: 35px;
+        margin-bottom: 35px;
     }
     .box {
         left: 30px;
@@ -906,7 +905,7 @@ article {
     }
     .box_find_contact {
         left: 30px;
-        bottom: 350px;
+        bottom: 260px;
         top: inherit;
         width: 115px;
         height: 115px;
@@ -920,11 +919,13 @@ article {
     }
     .footer {
         background-image: url(../images/game_1280.jpg);
+        min-width: 641px;
+        max-width: 960px;
+        padding-top: 125px;
+        padding-bottom: 23px;
     }
     .container_footer_logo {
         flex-direction: column;
-        margin-top: 125px;
-        width: 92%;
         align-items: center;
         margin-bottom: 280px;
     }
@@ -946,14 +947,13 @@ article {
         font-size: 36px;
     }
     .search_item_footer {
-        width: 88%;
+        
         justify-content: space-between;
         margin-bottom: 50px;
     }
     .logo-link_footer_surf {
         width: 205px;
         height: 56px;
-        margin-bottom: 23px;
     }
 
 }
@@ -961,12 +961,13 @@ article {
     .header {
         background-image: url("../images/football_767.jpg");
         max-width: 640px;
-        min-width: 240px;
+        min-width: 320px;
+        padding-top: 33px;
+        padding-bottom: 80px;
     }
     .logo-link {
         width: 133px;
         height: 36px;
-        margin-top: 33px;
     }
     .title {
         margin-top: 135px;
@@ -985,7 +986,6 @@ article {
     .search_item {
         flex-direction: column;
         width: 87.5%;
-        margin-bottom: 80px;
         margin-top: 80px;
     }
     .search_apple_item {
@@ -1012,7 +1012,7 @@ article {
         flex-direction: column;
         align-items: center;
         max-width: 640px;
-        min-width: 240px;
+        min-width: 320px;
     }
     .header_title_footballer {
         display: flex;
@@ -1065,7 +1065,7 @@ article {
     .title_growth_athlets {
         width: 100%;
         max-width: 640px;
-        min-width: 240px;
+        min-width: 320px;
     }
     .title_growth_header {
        font-size: 23px;
@@ -1120,15 +1120,14 @@ article {
     }
     .title_growth_players {
         width: 100%;
-        min-width: 240px;
+        min-width: 320px;
         padding: 55px 65px 50px 20px;
     }
     .section {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
-        min-width: 240px;
+        min-width: 320px;
     }
     .box {
         width: 70px;
@@ -1158,8 +1157,7 @@ article {
         opacity: 0.30;
     }  
     .container_img_be_active {
-        width: 100%;
-        min-width: 240px;
+        min-width: 320px;
     }
     .img_be_active {
         max-width: 100%;
@@ -1168,24 +1166,28 @@ article {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .container_content_be_active {
+        padding-bottom: 75px;
+        padding-top: 30px;
+    }
     .title_be_active {
         font-size: 28px;
-        padding-top: 30px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     .text_be_active {
         font-size: 20px;
-        padding-bottom: 75px;
-
     }
     .section_find_contact {
-        width: 100%;
-        min-width: 240px;
+        min-width: 320px;
     }
     .content_find_contact {
         order: 1;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .container_content_find_contact {
+        padding-top: 30px;
+        padding-bottom: 75px;
     }
     .container_img_find_contact {
         order: 0;
@@ -1195,36 +1197,38 @@ article {
     }
     .title_find_contact {
         font-size: 28px;
-        padding-top: 30px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     .section_work_it {
-        width: 100%;
-        min-width: 240px;
+        min-width: 320px;
     }
     .content_work_it {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .container_content_work_it {
+        padding-top: 30px;
+        padding-bottom: 75px;
     }
     .img_work_it {
         max-width: 100%;
     }
     .title_work_it{
         font-size: 28px;
-        padding-top: 30px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     .footer {
-        background-image: url("../images/football_1280.jpg");
+        background-image: url("../images/game_767.jpg");
         width: 100%;
         max-width: 640px;
-        min-width: 240px;
+        min-width: 320px;
+        padding-top: 100px;
+        padding-bottom: 10px;
     }
     .container_footer_logo {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-top: 100px;
     }
     .footer_logo {
         width: 72px;
@@ -1258,7 +1262,6 @@ article {
         width: 133px;
         height: 36px;
         margin-top: 80px;
-        margin-bottom: 10px;
     }
     .box_find_contact {
         width: 70px;
@@ -1306,5 +1309,4 @@ article {
     border-radius: 2px;
     opacity: 0.30;
     }
-
 }
