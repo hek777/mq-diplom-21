@@ -1,12 +1,12 @@
 
 @font-face {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     src: url("../fonts/OpenSans-Bold.woff2") format(woff2); 
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     src: url("../fonts/OpenSans-Regular.woff2") format(woff2);
     font-weight: 400;
     font-style: normal;
@@ -20,6 +20,7 @@ p {
 body {
     margin: 0 auto;
     min-width: 320px;
+    font-family: "Open Sans", Arial, sans-serif;    
 }
 h1 {
     margin: 0;
@@ -70,6 +71,8 @@ article {
     text-transform: uppercase;
 }
 .header__title {
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
@@ -101,6 +104,9 @@ article {
     text-transform: uppercase;
     color: #ffffff;
 }
+.line_link {
+    font-weight: 700;
+}
 .main {
     width: 100%;
 }
@@ -125,13 +131,14 @@ article {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 13px;
+    width: 15px;
     height: 5px;
     background-color: #5e42b0;
     right: 0;
     margin: 0 auto;
     margin-top: 4px;
     top: 14px;
+    border-radius: 25px;
 }
 .title_athlets_item {
     text-transform: uppercase;
@@ -165,18 +172,19 @@ article {
     font-weight: bold;
     position: relative;   
 }
-.title_growth_item::before {
+.title_growth_item::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 13px;
+    width: 15px;
     height: 5px;
     background-color: #ffffff;
     right: 0;
     margin: 0 auto;
     margin-top: 4px;
     top: 14px;
+    border-radius: 25px;
 }
 .header_title_players {
     width: 100%;
@@ -434,7 +442,7 @@ article {
         font-size: 90px;
     }
     .header__title {
-        align-self: flex-end;
+        padding-left: 460px;
         font-size: 90px;
     }
     .search_apple_item {
@@ -482,18 +490,21 @@ article {
     }
     .title_athlets_item {
         font-size: 36px;
-        padding-bottom: 30px;
-        padding-left: 52%;
+        margin-bottom: 30px;
+        margin-left: 52%;
+    }
+    .title_connection_athlets {
+        padding-bottom: 60px;
     }
     .title_athlets_text {
         font-size: 20px;
         padding-left: 52%;
-        padding-bottom: 60px;
         width: 37%;
     }
     
     .title_collaboration_athlets {
         padding-top: 55px;
+        padding-bottom: 60px;
     }
     .title_growth_athlets {
         padding-bottom: 55px;
@@ -563,6 +574,12 @@ article {
     }
     .container_img_be_active {
         width: 50%;
+        background-image: url(../images/be-active.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 730px;
+        
     }
     .container_content_be_active {
         padding-top: 260px;
@@ -587,9 +604,15 @@ article {
     }
     .container_img_find_contact {
         width: 50%;
+        background-image: url(../images/find-contact.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 730px;
     }
     .content_find_contact {
         width: 50%;
+        
     }
     .title_find_contact {
         font-size: 80px;
@@ -597,6 +620,11 @@ article {
     }
     .container_img_work_it {
         width: 50%;
+        background-image: url(../images/work-it.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 730px;
     }
     .img_work_it {
         width: 100%;
@@ -666,6 +694,9 @@ article {
     .span_box_find_contact {
         font-size: 24px;
     }
+    .title_growth_item {
+        font-size: 18px;
+    }
 } 
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -699,6 +730,7 @@ article {
         font-size: 64px;
         align-self: flex-end;
         max-width: 80%;
+        padding-left: 110px;
     }
     .search_apple_item {
         width: 310px;
@@ -748,6 +780,7 @@ article {
     .title_athlets_item {
         font-size: 32px;
         padding-left: 290px;
+        margin-bottom: 35px;
     }
     .title_connection_item {
         font-size: 18px;
@@ -818,6 +851,11 @@ article {
         max-width: 960px;
         min-width: 641px;
         width: 100%;
+        min-height: 580px;
+        background-image: url(../images/be-active_960.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;   
     }
     .img_be_active {
         max-width: 100%;
@@ -861,6 +899,11 @@ article {
         width: 100%;
         max-width: 960px;
         min-width: 641px;
+        background-image: url(../images/find-contact.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 580px;
     }
     .img_find_contact {
         max-width: 100%;
@@ -877,6 +920,11 @@ article {
         width: 100%;
         max-width: 960px;
         min-width: 641px;
+        background-image: url(../images/work-it.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 580px;
     }
     .img_work_it {
         max-width: 100%;
@@ -982,10 +1030,11 @@ article {
         align-self: flex-end;
         font-size: 28px;
         max-width: 85%;
+        padding-left: 45px;
     }
     .search_item {
         flex-direction: column;
-        width: 87.5%;
+        width: 280px;
         margin-top: 80px;
     }
     .search_apple_item {
@@ -1044,7 +1093,7 @@ article {
     }
     .title_athlets_item {
         font-size: 23px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     .title_connection_item {
         font-size: 14px;
@@ -1158,6 +1207,12 @@ article {
     }  
     .container_img_be_active {
         min-width: 320px;
+        min-height: 350px;
+        width: 100%;
+        background-image: url(../images/be-active.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;  
     }
     .img_be_active {
         max-width: 100%;
@@ -1191,6 +1246,12 @@ article {
     }
     .container_img_find_contact {
         order: 0;
+        background-image: url(../images/find-contact_640.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 350px;
+        width: 100%;
     }
     .img_find_contact {
         max-width: 100%;
@@ -1201,6 +1262,14 @@ article {
     }
     .section_work_it {
         min-width: 320px;
+    }
+    .container_img_work_it {
+        width: 100%;
+        background-image: url(../images/work-it_640.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 350px;
     }
     .content_work_it {
         padding-left: 20px;
@@ -1248,7 +1317,7 @@ article {
         font-size: 14px;
     }
     .search_item_footer {
-        width: 87.5%;
+        width: 280px;
         flex-direction: column;
         margin-top: 75px;
     }
